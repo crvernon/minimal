@@ -25,7 +25,7 @@ jobs:
 
         - name: Install dependencies
           run: |
-            conda init $SHELL
+            conda init bash
             conda create --name x python=3.9
             conda activate x
             conda install -c conda-forge esmpy
